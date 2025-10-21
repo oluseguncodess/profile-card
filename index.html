@@ -12,17 +12,19 @@
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <title>Document</title>
+  <title>Profile Card</title>
 </head>
 
 <body class="w-full h-screen bg-white justify-center items-center flex">
-  <article class="w-[300px] md:w-[500px] max-w-[90%] h-[700px] md:h-[600px] p-4 bg-gray-100 rounded-[5px] flex flex-col gap-10"
+  <article class="w-[300px] md:w-[500px] max-w-[90%] h-[700px] md:h-[600px] p-4 bg-gray-200 rounded-[5px] flex flex-col gap-10"
     data-testid="test-profile-card">
     <header class="flex flex-col items-center gap-3 md:flex-row md:justify-around md:gap-10 mt-3">
-      <div class="w-15 h-15 md:w-20 md:h-20 border-4 border-blue-600 rounded-full">
+      <figure class="md:p-6 flex justify-center items-center md:bg-gray-400  md:w-[300px] rounded-[10px]">
+        <div class="w-15 h-15 md:w-20 md:h-20 border-4 border-blue-600 rounded-full">
         <img src="/images/normaldude.jpg" alt="" class="w-full h-full object-cover rounded-full"
           data-testid="test-user-avatar">
       </div>
+      </figure>
       <div class="flex flex-col items-center md:items-start gap-1">
         <h2 class="text-2xl font-bold" data-testid="test-user-name">Black Mamba</h2>
         <span class="text-sm">Current time: <span id="time" data-testid="test-user-time"></span></span>
@@ -48,7 +50,7 @@
       </div>
     </header>
     <section>
-      <h3 class="text-xl font-bold text-gray-400 mb-2">About Me</h3>
+      <h3 class="text-xl font-bold mb-2">About Me</h3>
       <p class="text-gray-700" data-testid="test-user-bio">
         Software Engineer with a passion for creating accessible and user-friendly web applications. Loves to travel
         and
@@ -56,7 +58,7 @@
       </p>
     </section>
     <section>
-      <h3 class="text-xl font-bold text-gray-400 mb-2">Hobbies</h3>
+      <h3 class="text-xl font-bold mb-2">Hobbies</h3>
       <ul class="flex flex-wrap gap-2" data-testid="test-user-hobbies">
         <li class="bg-blue-200 text-sm font-medium px-3 py-1 rounded-full">Coding</li>
         <li class="bg-blue-200 text-sm font-medium px-3 py-1 rounded-full">Hiking</li>
@@ -65,7 +67,7 @@
       </ul>
     </section>
     <section>
-      <h3 class="text-xl font-bold text-gray-400 mb-2">Dislikes</h3>
+      <h3 class="text-xl font-bold mb-2">Dislikes</h3>
       <ul class="flex flex-wrap gap-2" data-testid="test-user-dislikes">
         <li class="bg-red-200 text-sm font-medium px-3 py-1 rounded-full">Bugs in code</li>
         <li class="bg-red-200 text-sm font-medium px-3 py-1 rounded-full">Bad Internet</li>
